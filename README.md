@@ -6,6 +6,8 @@ Le projet Allez-Ciné est de créer en 2 semaines un site front-end responsif au
 
 Le deuxième objectif est de créer une newsletter pour promouvoir le contenu du site.
 
+[Les Consignes] https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine
+
 ## Les participants
 
   Adrien d'Oreye (github:Adridor)
