@@ -1,0 +1,28 @@
+.links{
+  position: fixed;
+  top: 300px;
+}
+
+.cercle{
+  position: relative;
+  top: -0.5vh;
+  background-color: white;
+  border-radius: 50%;
+  width: 3vh;
+}
+
+#twitter{
+  background-color: #26A3EF;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 1.1vh;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#facebook{
+  background-color: #3F6092;
+  padding-left: 1vh;
+  padding-right: 2vh;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
