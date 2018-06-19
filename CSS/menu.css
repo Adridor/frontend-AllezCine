@@ -3,7 +3,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-  padding: 0; margin: 0;
+  margin: 0;
 }
 html,body{
   display: block;
@@ -14,46 +14,36 @@ ul,li,a{
   list-style: none;
   text-decoration: none;
 }
-
 body{
-background-color: lightGrey;
+  background-color: #FEFEE2;
 }
-
 .navbar{
   position: fixed;
   z-index: 9999999999999999;
   /* background-color: rgba(0,0,0,0); */
 }
-
-
 .Red, .Red-text{
   color: #FB4446;
 }
-
 .Red-text:hover{
   background-color: White;
 }
-
 .White, .White-text{
   color: #FFFFFF;
 }
-
 .White-text:hover{
   color: #E3E3E3;
   background-color: #FB4446;
 }
-
 .navbar-toggler{
   background-color: rgba(76, 81, 84, 0.6) !important;
 }
 .navbar-toggler-icon{
   width: 100% !important;
 }
-
 .dropdown-menu{
   background-color:  !important;
 }
-
 .nav-link{
   border-radius: 1vh !important;
 }

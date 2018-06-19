@@ -1,56 +1,7 @@
-.links{
-  position: fixed;
-  top: 350px;
-}
-.Ruban{
-  padding-top: 1.5vh;
-  width: 3.9vh;
-}
-.cercle{
-  position: relative;
-  top: -0.5vh;
-  background-color: white;
-  border-radius: 50%;
-  width: 3vh;
-}
-.fab{
-  position: relative;
-  padding-left: 0.5vh;
-  cursor: pointer;
-}
-.fa-facebook-f{
-  padding-left: 0.9vh;
-}
-#twitter{
-  background-color: #26A3EF;
-  padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-#facebook{
-  background-color: #3F6092;
-  padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  margin-top: 1vh;
-}
-#codepen{
-  background-color: #E44A85;
-  padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  margin-top: 1vh;
-}
-#google{
-  background-color: #DC4A41;
-  padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  margin-top: 1vh;
-}
+
 .jumbotron img{
   width: 100%;
-  max-height: 500px;
+  height: 300px;
 }
 .jumbotron{
   max-height: 500px;
@@ -73,4 +24,47 @@
   background-color: #FB4446;
   width: 100%;
   text-align: left;
+  height: 2em;
+}
+.fa-phone{
+  padding-left: 2em;
+}
+.blackBtn{
+  background-color: black;
+  color: White;
+  border-color: black;
+  margin-top: 3px;
+}
+
+#carouselExampleIndicators ol .active {
+  background-color: #FB4446;
+}
+.selectionFilms{
+  display: flex;
+  align-self: center;
+  margin-top: 0.1em;
+  margin-left: 5.5em;
+  background-color: yellow;
+  height: 200px;
+  width: 80%;
+}
+.contFilm{
+  flex-direction: row;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  background-color: green;
+  width: 13%;
+  height: 180px;
+}
+.cont1{
+  margin-left: 3em;
+}
+
+.imgFilm, .imgFilm img{
+  width: 100%
+}
+
+.titre{
+  font-size: 0.5em;
 }
