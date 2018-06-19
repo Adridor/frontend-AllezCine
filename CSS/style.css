@@ -1,50 +1,49 @@
 .links{
   position: fixed;
   top: 250px;
+  margin-left: -97px;
 }
 .Ruban{
-  padding-top: 1.5vh;
-  width: 3.9vh;
+  width: auto;
+  border-radius: 0 20px 20px 0;
+  text-align: right;
+
 }
-.cercle{
-  position: relative;
-  top: -0.5vh;
-  background-color: white;
-  border-radius: 50%;
-  width: 3vh;
+.Ruban > span{
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #ffffff;
 }
 .fab{
-  position: relative;
-  padding-left: 0.5vh;
   cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1vh;
+  margin: 0px 0px 5px 10px;
+  color: #000000;
 }
 .fa-facebook-f{
-  padding-left: 0.9vh;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-right: 10px;
 }
 #twitter{
   background-color: #26A3EF;
   padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+  margin-top: 1vh;
 }
 #facebook{
   background-color: #3F6092;
   padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
   margin-top: 1vh;
 }
 #codepen{
   background-color: #E44A85;
   padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
   margin-top: 1vh;
 }
 #google{
   background-color: #DC4A41;
   padding-top: 1.1vh;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
   margin-top: 1vh;
 }
