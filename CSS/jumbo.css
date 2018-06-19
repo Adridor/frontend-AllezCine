@@ -42,20 +42,22 @@
 .selectionFilms{
   display: flex;
   align-self: center;
+  align-content: center;
   margin-top: 0.1em;
   margin-left: 5.5em;
   background-color: yellow;
-  height: 200px;
+  height: 400px;
   width: 80%;
 }
 .contFilm{
   flex-direction: row;
+
   margin-left: 1em;
   margin-right: 1em;
   margin-top: 1em;
   background-color: green;
   width: 13%;
-  height: 180px;
+  height: 80%;
 }
 .cont1{
   margin-left: 3em;
