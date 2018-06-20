@@ -1,0 +1,63 @@
+.jumbotron img{
+  width: 100%;
+  height: 500px;
+}
+.jumbotron{
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+@media screen and (min-width: 576px){
+  .jumbotron{
+    max-height: 500px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+.redBox{
+  background-color: #FB4446;
+  border-color: #FB4446;
+}
+.RedLine{
+  background-color: #FB4446;
+  width: 100%;
+  text-align: left;
+  height: 2em;
+}
+.fa-phone{
+  padding-left: 2em;
+}
+.blackBtn{
+  background-color: black;
+  color: White;
+  border-color: black;
+  margin-top: 3px;
+}
+
+#carouselExampleIndicators ol .active {
+  background-color: #FB4446;
+}
+.selectionFilms{
+  display: flex;
+  align-self: center;
+  align-content: center;
+  margin-top: 0.1em;
+  margin-left: 5.5em;
+  background-color: white;
+  height: auto;
+  width: 80%;
+  border: solid 1px lightgrey;
+}
+
+.col img{
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+.textRight{
+  padding-left: 3vh;
+}
+.Finfo{
+  color: black;
+}
