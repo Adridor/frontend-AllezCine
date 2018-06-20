@@ -1,3 +1,4 @@
+/*Jumbotron*/
 .jumbotron img{
   width: 100%;
   height: 500px;
@@ -19,6 +20,7 @@
   background-color: #FB4446;
   border-color: #FB4446;
 }
+/*Ruban Rouge*/
 .RedLine{
   background-color: #FB4446;
   width: 100%;
@@ -34,7 +36,7 @@
   border-color: black;
   margin-top: 3px;
 }
-
+/*Carousel*/
 #carouselExampleIndicators ol .active {
   background-color: #FB4446;
 }
@@ -49,7 +51,7 @@
   width: 80%;
   border: solid 1px lightgrey;
 }
-
+/*Image*/
 .col img{
   max-width: 300px;
   width: 100%;
