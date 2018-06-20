@@ -67,6 +67,13 @@
   width: 100%
 }
 
-.titre{
+.Ftitle{
   font-size: 0.5em;
+}
+.text2{
+  font-size: 0.3em;
+  display: inline-flex;
+}
+.miniTextLeft{
+  align-content: left;
 }
