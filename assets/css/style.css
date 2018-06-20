@@ -1,30 +1,31 @@
 .links{
   position: fixed;
   top: 250px;
-  margin-left: -97px;
+  margin-left: -95px;
+  z-index: 1;
 }
 .Ruban{
   width: auto;
   border-radius: 0 20px 20px 0;
   text-align: right;
-
 }
 .Ruban > span{
   margin-right: 10px;
   margin-left: 10px;
+}
+.Ruban > span > a{
   color: #ffffff;
 }
 .fab{
   cursor: pointer;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 1vh;
   margin: 0px 0px 5px 10px;
-  color: #000000;
 }
 .fa-facebook-f{
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-right: 10px;
 }
 #twitter{
