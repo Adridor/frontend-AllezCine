@@ -1,4 +1,4 @@
-div#twitter:active, div#codepen:active, div#google:active {
+div#twitter:hover, div#codepen:hover, div#google:hover {
     animation-duration: 1s;
 	animation-name: glissement;
 	animation-iteration-count: infinite;
@@ -12,7 +12,7 @@ div#twitter:active, div#codepen:active, div#google:active {
 		margin-right: -75px;
 	}
 }
-div#facebook:active {
+div#facebook:hover {
     animation-duration: 1s;
 	animation-name: fb-glissement;
 	animation-iteration-count: infinite;
