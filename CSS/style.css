@@ -2,6 +2,7 @@
   position: fixed;
   top: 250px;
   margin-left: -95px;
+  z-index: 1;
 }
 .Ruban{
   width: auto;
