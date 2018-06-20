@@ -1,0 +1,28 @@
+div#twitter:active, div#codepen:active, div#google:active {
+    animation-duration: 1s;
+	animation-name: glissement;
+	animation-iteration-count: infinite;
+}
+@keyframes glissement {
+	from {
+		margin-right: 0px;
+	}
+
+	to {
+		margin-right: -75px;
+	}
+}
+div#facebook:active {
+    animation-duration: 1s;
+	animation-name: fb-glissement;
+	animation-iteration-count: infinite;
+}
+@keyframes fb-glissement {
+	from {
+		margin-right: 0px;
+	}
+
+	to {
+		margin-right: -120px;
+	}
+}
