@@ -41,7 +41,6 @@
   background-color: #FB4446;
 }
 .selectionFilms{
-  display: flex;
   align-self: center;
   align-content: center;
   margin-top: 0.1em;
@@ -51,8 +50,18 @@
   width: 80%;
   border: solid 1px lightgrey;
 }
+/* Sélection des films et séries */
+.Filmsdiplay, .Seriediplay {
+  align-self: center;
+  align-content: center;
+  margin-top: 0.1em;
+  margin-left: 5.5em;
+  background-color: white;
+  height: auto;
+}
+
 /*Image*/
-.col img{
+.col img , .col-2 img{
   max-width: 300px;
   width: 100%;
   margin-top: 10px;
@@ -62,4 +71,19 @@
 }
 .Finfo{
   color: black;
+}
+
+.FeaturedSeries , .FeaturedMovies{
+  margin-top: 30px;
+}
+
+/* boutons pour changer de genre */
+.ChangeChoice{
+
+}
+
+/* titre avec bord rouge */
+.container .feature{
+   border-left: 5px solid red;
+   margin-left: -2em;
 }
