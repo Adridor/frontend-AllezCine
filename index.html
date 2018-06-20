@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/menu.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     <meta charset="utf-8">
     <title>Allez-ciné</title>
   </head>
   <body>
     <header>
+      <!-- menu -->
       <div id="IncludeContent"></div>
     </header>
     <main>
+      <!-- liens des réseaux sociaux -->
       <div class="links">
         <div class="Ruban" id="twitter">
         	<span><a href="#">Twitter </a><i class="fab fa-twitter"></i></span>
@@ -29,6 +31,7 @@
           <span><a href="#">Google </a><i class="fab fa-google-plus-g"></i></span>
       </div>
     </div>
+      <!-- jumbotron et slides -->
       <div class="jumbotron jumbotron-fluid">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -72,6 +75,7 @@
           </a>
         </div>
       </div>
+        <!-- ruban rouge -->
       <div class="RedLine">
         <span class="White"><i class="fas fa-phone"></i> (+000) 009 455 4088</span>
         <span>
@@ -79,34 +83,54 @@
           <button class="blackBtn" type="button" name="button">REGISTER</button>
         </span>
       </div>
-      <div class="selectionFilms">
-        <div class="contFilm cont1">
-          <div class="imgFilm">
-            <img src="assets/img/Solo.jpg" alt="solo">
-          </div>
-          <div class="text1">
-            <span class="White titre">SOLO: A STAR WARS STORY</span>
-          </div>
-          <div class="text2">
-            <div class="miniTextRight">
 
-            </div>
-            <div class="miniTextLeft">
+      <!-- sélection des films -->
+      <div id="TopSelection" class="container selectionFilms">
+        <div class="row">
+          <div class="col">
+            <a href="">
+            <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
+            <h5>Le Seigneur des anneaux</h5>
+            <p>2002<span class="textRight">Adventure</span></p>
+            </a>
+          </div>
+          <div class="col">
+            <a href="">
+            <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
+            <h5>Intouchable</h5>
+            <p>2011<span class="textRight">Comedie</span></p>
+            </a>
+          </div>
 
-            </div>
+          <div class="col">
+            <a href="">
+            <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
+            <h5>Movie title</h5>
+            <p>2010<span class="textRight">Adventure</span></p>
+            </a>
+          </div>
+          <div class="col">
+            <a href="">
+            <img src="assets/img/thefall-2006-dramatique.jpg" alt="Movie - Poster">
+            <h5>The Fall</h5>
+            <p>2006<span class="textRight">Adventure</span></p>
+            </a>
+          </div>
+          <div class="col">
+            <a href="">
+            <img src="assets/img/shutterisland-2010-thriller.jpg" alt="Movie - Poster">
+            <h5>Shutter Island</h5>
+            <p>2010<span class="textRight">Adventure</span></p>
+            </a>
           </div>
         </div>
-        <div class="contFilm"></div>
-        <div class="contFilm"></div>
-        <div class="contFilm"></div>
-        <div class="contFilm"></div>
       </div>
     </main>
     <footer>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="JS/jquery.js"></script>
-    <!-- <script src="JS/main.js"></script> -->
+    <script src="libraries/jquery.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
   </body>
 </html>
