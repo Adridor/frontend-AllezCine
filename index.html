@@ -60,7 +60,7 @@
     </header>
     <main>
       <!-- liens des réseaux sociaux -->
-      <!-- <div class="links">
+      <div class="links">
         <div class="Ruban" id="twitter">
         	<span><a href="#">Twitter </a><i class="fab fa-twitter"></i></span>
         </div>
@@ -73,7 +73,7 @@
         <div class="Ruban" id="google">
           <span><a href="#">Google </a><i class="fab fa-google-plus-g"></i></span>
         </div>
-      </div> -->
+      </div>
               <!-- ruban rouge -->
       <div class="RedLine">
         <span class="White"><i class="fas fa-phone"></i> (+000) 009 455 4088</span>
@@ -122,7 +122,7 @@
           </div>
         </div>
       </div>
-      <div class="FeaturedMovies">
+      <div id="FeatMov" class="FeaturedMovies">
         <div class="container Filmsdiplay">
           <div class="titreFeature">
             <h1 class="feature"> FEATURED MOVIES</h1>
@@ -220,13 +220,59 @@
               <p class="Finfo">2010<span class="textRight">Adventure</span></p>
               </a>
             </div>
+          <div class="row hiddenMov" style="display: none">
+              <div class="col-2">
+                <a href="">
+                <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
+                <h3 class="Finfo">Le Seigneur des anneaux</h3>
+                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
+                <h3 class="Finfo">Le Seigneur des anneaux</h3>
+                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
+                <h3 class="Finfo">Intouchable</h3>
+                <p class="Finfo">2011<span class="textRight">Comedie</span></p>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
+                <h3 class="Finfo">Inception</h3>
+                <p class="Finfo">2010<span class="textRight">Adventure</span></p>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                <img src="assets/img/thefall-2006-dramatique.jpg" alt="Movie - Poster">
+                <h3 class="Finfo">The Fall</h3>
+                <p class="Finfo">2006<span class="textRight">Adventure</span></p>
+                </a>
+              </div>
+              <div class="col-2">
+                <a href="">
+                <img src="assets/img/shutterisland-2010-thriller.jpg" alt="Movie - Poster">
+                <h3 class="Finfo">Shutter Island</h3>
+                <p class="Finfo">2010<span class="textRight">Adventure</span></p>
+                </a>
+              </div>
+            </div>
           <div class="btnMore alignR">
             <button class="redBox" id="moreMov" type="button" name="button"> PLUS DE FILMS</button>
           </div>
-        </div>
+          <div class="btnMore alignR">
+            <button class="redBox" id="lessMov" type="button" name="button">MOINS DE FILMS</button>
+          </div>
 
       </div>
-      <div class="FeaturedSeries">
+      <div id="FeatSer" class="FeaturedSeries">
         <div class="container Seriediplay">
           <div class="titreFeature">
           <h1 class="feature"> FEATURED SERIES</h1>
@@ -330,10 +376,10 @@
           </div>
         </div>
       </div>
-      <div class="MovieShop">
+      <div id="Shop" class="MovieShop">
         <div class="container-fluid Seriediplay">
           <div class="titreFeature">
-          <h1 class="feature"> MOVIE SHOP</h1>
+          <h1 class="featureShop"> MOVIE SHOP</h1>
           </div>
           <div class="Changebtn">
             <button class="blckbtn" type="button" name="button"> > </button>
@@ -484,6 +530,8 @@
         </div>
         </div>
       </div>
+
+
     </footer>
     <!-- <div class="modal" id="myModal">
         <div class="modal-dialog">
@@ -510,6 +558,7 @@
       </div> -->
     <script src="libraries/jquery.min.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/more-min.js"></script>
     <!-- <script src="assets/js/main.js"></script> -->
   </body>
 </html>

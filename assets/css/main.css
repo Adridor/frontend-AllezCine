@@ -92,6 +92,11 @@ h3{
    margin-left: -2em;
 }
 
+.featureShop{
+  border-left: 5px solid red;
+  margin-left: 2em;
+}
+
 /* alignement bouton */
 .alignR{
   margin-bottom: 1em;
@@ -129,4 +134,9 @@ iframe{
   margin-bottom: 3px;
   border: none;
   margin-right: 4px;
+}
+
+.movieShop{
+  margin-right: 1em;
+  margin-left: 1em;
 }
