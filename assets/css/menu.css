@@ -14,6 +14,9 @@ ul,li,a{
   list-style: none;
   text-decoration: none;
 }
+body{
+  background-color: #FEFEE2;
+}
 .navbar{
   position: fixed;
   z-index: 99999999;
@@ -43,7 +46,4 @@ ul,li,a{
 }
 .nav-link{
   border-radius: 1vh !important;
-}
-.greybox{
-  background-color: rgba(76,81,84,0.6);
 }
