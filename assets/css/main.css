@@ -1,3 +1,14 @@
+*{
+font-family: Helvetica Neue, helvetica, arial, sans-serif;
+}
+.RR{
+  color: #FB4446;
+}
+h3{
+  font-size: 1.3em !important;
+}
+
+/*Jumbotron*/
 .jumbotron img{
   width: 100%;
   height: 500px;
@@ -19,6 +30,7 @@
   background-color: #FB4446;
   border-color: #FB4446;
 }
+/*Ruban Rouge*/
 .RedLine{
   background-color: #FB4446;
   width: 100%;
@@ -34,12 +46,11 @@
   border-color: black;
   margin-top: 3px;
 }
-
+/*Carousel*/
 #carouselExampleIndicators ol .active {
   background-color: #FB4446;
 }
 .selectionFilms{
-  display: flex;
   align-self: center;
   align-content: center;
   margin-top: 0.1em;
@@ -49,8 +60,18 @@
   width: 80%;
   border: solid 1px lightgrey;
 }
+/* Sélection des films et séries */
+.Filmsdiplay, .Seriediplay {
+  align-self: center;
+  align-content: center;
+  margin-top: 0.1em;
+  margin-left: 5.5em;
+  background-color: white;
+  height: auto;
+}
 
-.col img{
+/*Image*/
+.col img , .col-2 img, .col-3 img{
   max-width: 300px;
   width: 100%;
   margin-top: 10px;
@@ -60,4 +81,52 @@
 }
 .Finfo{
   color: black;
+}
+
+.FeaturedSeries , .FeaturedMovies{
+  margin-top: 30px;
+}
+/* titre avec bord rouge */
+.container .feature{
+   border-left: 5px solid red;
+   margin-left: -2em;
+}
+
+/* alignement bouton */
+.alignR{
+  margin-bottom: 1em;
+  margin-left: 40%;
+}
+.Changebtn{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#moreSer{
+  margin-bottom: 1em;
+}
+
+.movShop{
+  background-color: black;
+  padding: 0 !important;
+  color: white;
+}
+
+.txtR{
+  font-size: 1em;
+}
+
+.grayB{
+  background-color: #EEEDF2;
+}
+iframe{
+  width: 100%;
+  height: 40%;
+}
+.blckbtn{
+  background-color: black;
+  color: white;
+  margin-bottom: 3px;
+  border: none;
+  margin-right: 4px;
 }
