@@ -99,6 +99,9 @@ footer .container-fluid h2, footer .container-fluid #linksfooter {
 footer ol{
     padding-left: 0;
 }
+footer hr{
+  background-color: #ced4da;
+}
 .sm-img{
   margin-top: -8px;
   width: 100%;
@@ -107,7 +110,7 @@ footer ol{
 }
 
 .sm-img > img{
-  width: 100%
+  margin-top: -50%!important;
 }
 
 #smimgallezcine .col-4 {
@@ -122,4 +125,19 @@ footer ol{
 footer .badge-secondary {
   padding: 5px;
   margin: 2px;
+}
+#linksfooter .fab {
+    margin: 4px;
+    border: 1px solid #ffffff;
+    padding: 6px;
+}
+#linksfooter .fa-facebook-f {
+    padding: 6px 10px;
+}
+footer .form-group {
+    text-align: center;
+}
+footer input {
+  width: 50%!important;
+  margin: 2px auto 12px;
 }
