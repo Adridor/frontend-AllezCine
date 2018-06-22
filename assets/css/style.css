@@ -24,14 +24,14 @@ h2{
 .Ruban > span > a{
   color: #ffffff;
 }
-.fab{
+#links .fab{
   cursor: pointer;
   background-color: #ffffff;
   border-radius: 50%;
   padding: 1vh;
   margin: 0px 0px 5px 10px;
 }
-.fa-facebook-f{
+#links .fa-facebook-f{
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
@@ -72,7 +72,7 @@ div#twitter:hover, div#codepen:hover, div#google:hover {
   }
 }
 div#facebook:hover {
-    animation-duration: 1s;
+  animation-duration: 1s;
   animation-name: fb-glissement;
   animation-iteration-count: infinite;
 }
@@ -93,7 +93,7 @@ footer h2, footer p, footer li, footer i {
   color: #ffffff;
   background-color: #000000!important;
 }
-footer .container-fluid p, footer .container-fluid #linksfooter {
+footer .container-fluid h2, footer .container-fluid #linksfooter {
     margin: auto;
 }
 footer ol{
