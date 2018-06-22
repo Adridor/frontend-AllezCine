@@ -58,7 +58,7 @@ h2{
 }
 /*Ruban animation*/
 div#twitter:hover, div#codepen:hover, div#google:hover {
-    animation-duration: 1s;
+  animation-duration: 1s;
   animation-name: glissement;
   animation-iteration-count: infinite;
 }
@@ -85,9 +85,26 @@ div#facebook:hover {
     margin-right: -120px;
   }
 }
+/*Formulaire*/
+h1.contactus {
+    margin-bottom: -130px;
+}
+form {
+  position: relative;
+  bottom: -120px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+textarea.form-control {
+    margin-bottom: 20px;
+}
+form input{
+  margin-bottom: 10px;
+}
 /*Footer*/
 footer {
   background-color: #000000;
+  padding-top: 10%;
 }
 footer h2, footer p, footer li, footer i {
   color: #ffffff;
@@ -97,7 +114,7 @@ footer .container-fluid h2, footer .container-fluid #linksfooter {
     margin: auto;
 }
 footer ol{
-    padding-left: 0;
+  padding-left: 0;
 }
 footer hr{
   background-color: #ced4da;
@@ -114,7 +131,7 @@ footer hr{
 }
 
 #smimgallezcine .col-4 {
-    padding: 0;
+  padding: 0;
 }
 
 #smimgallezcine img {
@@ -138,6 +155,7 @@ footer .form-group {
     text-align: center;
 }
 footer input {
-  width: 50%!important;
+  width: 40%!important;
   margin: 2px auto 12px;
+  display: inline-block!important;
 }
