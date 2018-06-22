@@ -94,6 +94,7 @@ h3{
    margin-left: -2em;
 }
 
+
 /* alignement bouton */
 .alignR{
   margin-bottom: 1em;
@@ -109,9 +110,12 @@ h3{
 }
 
 .movShop{
-  background-color: black;
   padding: 0 !important;
   color: white;
+  height: 100%;
+}
+.blackbckgrnd{
+  background-color: black;
 }
 
 .txtR{
@@ -131,4 +135,22 @@ iframe{
   margin-bottom: 3px;
   border: none;
   margin-right: 4px;
+}
+
+.movieShop{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.hidden{
+  display: none;
+}
+
+.dsplhidden{
+  visibility: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.smovdspl img{
+  margin-top: 0 !important;
 }
