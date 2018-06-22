@@ -1,3 +1,10 @@
+/*Général*/
+h1{
+  font-size: 1.5em!important;
+}
+h2{
+  font-size: 1.4em!important;
+}
 /*Rubans*/
 #links{
   position: fixed;
@@ -79,6 +86,13 @@ div#facebook:hover {
   }
 }
 /*Footer*/
+footer {
+  background-color: #000000;
+}
+footer h2, footer p, footer li, footer i {
+  color: #ffffff;
+  background-color: #000000!important;
+}
 footer .container-fluid p, footer .container-fluid #linksfooter {
     margin: auto;
 }
@@ -91,10 +105,21 @@ footer ol{
   height: 50px;
   overflow: hidden;
 }
+
 .sm-img > img{
   width: 100%
 }
-div#smimgallezcine > img {
-    width: 32%;
-    margin:0
+
+#smimgallezcine .col-4 {
+    padding: 0;
+}
+
+#smimgallezcine img {
+    margin: 0;
+    padding: 0;
+}
+
+footer .badge-secondary {
+  padding: 5px;
+  margin: 2px;
 }
