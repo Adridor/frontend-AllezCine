@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  ageVerif();
+  // ageVerif();
+  btns();
+  cookies();
 });
 
 
@@ -7,17 +9,15 @@ $(document).ready(function(){
 
 //vérif de l'age
 function ageVerif() {
-
   let age = prompt("Please enter your age !");
   age = parseInt(age);
-
   while(isNaN(age) || age < 18) {
 
       if(isNaN(age)){
           age = prompt("Please enter your age !");
       }
 
-      if(age < 18){
+      if(0 < age < 18){
           // window.location.href = "https://www.imdb.com";
           console.log('test');
           break;
@@ -28,7 +28,7 @@ function ageVerif() {
 
 
 // boutons
-function btnMorMin(){
+function btns(){
 $( '#moreMov' ).click(function(){
   $('.hiddenMov').fadeIn(1000);
   $('#moreMov').addClass('hidden');
@@ -52,4 +52,11 @@ $('#lessSer').click(function(){
   $('#moreSer').removeClass('hidden');
   $('#lessSer').addClass('hidden');
 });
-};
+}
+
+// Hide cookies alert
+function cookies(){
+$('#btnAcceptCookies').on('click', function() {
+    $('#cookiesAlert').css('display', 'none');
+});
+}
