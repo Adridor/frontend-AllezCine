@@ -12,8 +12,49 @@
   <body>
     <header>
       <!-- menu -->
-      <div id="IncludeContent"></div>
-      <!-- jumbotron et slides -->
+      <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+        <a class="navbar-brand mr-5" href="#">
+          <h1><b><span class="Red">ALLEZ</span><span class="White">CINE!</span></b></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon White"> menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link Red-text  mr-2 greybox" href="#"><span class="Red" id="Home">Home</span> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle White-text ml-3 mr-2 greybox" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genre
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Aventure</a>
+                <a class="dropdown-item" href="#">Comédie</a>
+                <a class="dropdown-item" href="#">Dramatique</a>
+                <a class="dropdown-item" href="#">Science-Fiction</a>
+                <a class="dropdown-item" href="#">Thriller</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle White-text ml-3  mr-5 greybox" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sections
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <a class="dropdown-item" href="#TopSelection">Sélection du moment</a>
+                <a class="dropdown-item" href="#FeatMov">Featured Movies</a>
+                <a class="dropdown-item" href="#FeatSer">Featured Series</a>
+                <a class="dropdown-item" href="#Shop">Shop</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link White-text greybox" href="#"><span class="White-text" id="Contact">Contact</span><span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>      <!-- jumbotron et slides -->
       <div class="jumbotron jumbotron-fluid">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -733,7 +774,7 @@
       </div>
     </main>
     <footer>
-      <div class="container-fluid">
+      <div class="container-fluid contact">
         <div class="form-group">
             <label for="exampleFormControlInput1" class="Red">SUBSCRIBE TO US</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email..."><button type="submit" class="btn btn-primary subscribe">SUBSCRIBE</button>
@@ -766,7 +807,22 @@
           <div class="col">
             <h2>REVIEW MOVIES</h2>
             <hr>
-            <p><span class="badge badge-secondary">Comedy</span><span class="badge badge-secondary">Horror</span><span class="badge badge-secondary">Historical</span><span class="badge badge-secondary">Romantic</span><span class="badge badge-secondary">Love</span><span class="badge badge-secondary">Action</span><span class="badge badge-secondary">Reviews</span><span class="badge badge-secondary">Comedy</span><span class="badge badge-secondary">Horror</span><span class="badge badge-secondary">Historical</span><span class="badge badge-secondary">Romantic</span><span class="badge badge-secondary">Love</span><span class="badge badge-secondary">Action</span><span class="badge badge-secondary">Reviews</span></p>
+            <p>
+              <span class="badge badge-secondary">Comedy</span>
+              <span class="badge badge-secondary">Horror</span>
+              <span class="badge badge-secondary">Historical</span>
+              <span class="badge badge-secondary">Romantic</span>
+              <span class="badge badge-secondary">Love</span>
+              <span class="badge badge-secondary">Action</span>
+              <span class="badge badge-secondary">Reviews</span>
+              <span class="badge badge-secondary">Comedy</span>
+              <span class="badge badge-secondary">Horror</span>
+              <span class="badge badge-secondary">Historical</span>
+              <span class="badge badge-secondary">Romantic</span>
+              <span class="badge badge-secondary">Love</span>
+              <span class="badge badge-secondary">Action</span>
+              <span class="badge badge-secondary">Reviews</span>
+            </p>
           </div>
           <div class="col">
             <h2>LATEST MOVIES</h2>
@@ -876,9 +932,14 @@
           </div>
         </div>
       </div> -->
-    <script src="libraries/jquery.min.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/more-min.js"></script>
-    <!-- <script src="assets/js/main.js"></script> -->
+
+      <div id="cookiesAlert">
+        <h6>Cookies on the <span>ALLEZ</span>CINE website</h6>
+        <p>We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies on our website. However, if you would like to, you can change your cookie settings at any time.</p>
+        <a id="btnAcceptCookies" class="btn btn-primary">Got it !</a>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>

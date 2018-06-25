@@ -153,3 +153,13 @@ iframe{
 .smovdspl img{
   margin-top: 0 !important;
 }
+/* cookies */
+#cookiesAlert{
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+
+}
