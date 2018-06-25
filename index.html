@@ -119,8 +119,8 @@
       <div class="RedLine">
         <span class="White"><i class="fas fa-phone"></i> (+000) 009 455 4088</span>
         <span>
-          <button class="blackBtn" type="button" name="button">LOGIN</button>
-          <button class="blackBtn" type="button" name="button">REGISTER</button>
+          <button id="login" class="blackBtn logIn" type="button" name="button">LOGIN</button>
+          <button id="register" class="blackBtn" type="button" name="button">REGISTER</button>
         </span>
       </div>
       <!-- sélection des films -->
@@ -909,6 +909,59 @@
 
 
     </footer>
+    <div class="totalScreen login hidden">
+      <div class="login-form">
+        <form action="" method="post">
+            <h2 class="text-center">Log in</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Log in</button>
+            </div>
+            <div class="clearfix">
+                <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+                <a href="#" class="pull-right">Forgot Password?</a>
+                <a href="#" id="cancel" class="pull-left">Cancel</a>
+                <a href="#" id="registerbtn" class="pull-right">Register</a>
+            </div>
+        </form>
+          <p id="createAcc" class="text-center"><a href="#">Create an Account</a></p>
+      </div>
+    </div>
+    <div class="totalScreen register hidden">
+      <div class="login-form">
+        <form action="" method="post">
+            <h2 class="text-center">Register</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nom" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="mail" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="confirm Password" required="required">
+            </div>
+            <label class="pull-left checkbox-inline"><input type="checkbox" required="required"><a href="#"> Conditions générales d'utilisation</a></label>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </div>
+            <div class="clearfix">
+                <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+                <a href="#" class="pull-right">Forgot Password?</a>
+                <a href="#" id="cancelReg" class="pull-left">Cancel</a>
+                <a href="#" id="registerbtn" class="pull-right">Register</a>
+            </div>
+        </form>
+      </div>
+    </div>
     <!-- <div class="modal" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -933,11 +986,11 @@
         </div>
       </div> -->
 
-      <div id="cookiesAlert">
+      <!-- <div id="cookiesAlert">
         <h6>Cookies on the <span>ALLEZ</span>CINE website</h6>
         <p>We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies on our website. However, if you would like to, you can change your cookie settings at any time.</p>
         <a id="btnAcceptCookies" class="btn btn-primary">Got it !</a>
-      </div>
+      </div> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 

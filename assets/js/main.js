@@ -2,6 +2,7 @@ $(document).ready(function(){
   // ageVerif();
   btns();
   cookies();
+  logIn();
 });
 
 
@@ -24,8 +25,6 @@ function ageVerif() {
       }
   }
 }
-
-
 
 // boutons
 function btns(){
@@ -59,4 +58,36 @@ function cookies(){
 $('#btnAcceptCookies').on('click', function() {
     $('#cookiesAlert').css('display', 'none');
 });
+}
+
+function logIn(){
+  $('#login').click(function(){
+    $('.login').removeClass('hidden');
+    $('body').css('oveflow', 'hidden');
+    $('#cancel').click(function(){
+      $('.login').addClass('hidden');
+    });
+    $('#createAcc').click(function(){
+        $('.login').addClass('hidden');
+        $('.register').removeClass('hidden');
+        $('#cancelReg').click(function(){
+          $('.register').addClass('hidden');
+        });
+    });
+    $('totalScreen').click(function(){
+      $('.login').addClass('hidden');
+    })
+  })
+  $('#register').click(function(){
+    $('.register').removeClass('hidden');
+    $('body').css('oveflow', 'hidden');
+    $('#cancelReg').click(function(){
+      $('.register').addClass('hidden');
+    });
+    $('totalScreen').click(function(e){
+      console.log('test');
+      e.stopPropagation();
+    })
+
+  })
 }
