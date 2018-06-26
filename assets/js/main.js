@@ -69,13 +69,15 @@ $(document).on("click", ".clickImage", function (){
 function ageVerif() {
   let age = prompt("Please enter your age !");
   age = parseInt(age);
+
   while(isNaN(age) || age < 18) {
 
       if(isNaN(age)){
+        console.log('bit');
           age = prompt("Please enter your age !");
       }
 
-      if(age < 18){
+      else if(age < 18){
           // window.location.href = "https://www.imdb.com";
           console.log('moins de 18');
           break;
