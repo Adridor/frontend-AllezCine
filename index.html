@@ -477,7 +477,7 @@
           <div class="container-fluid">
             <div class="row smovdspl">
               <div id="imgWidthTest" class="col-lg-7 col-sm-12">
-                <div class="Changebtn dsplhidden">
+                <div class="Changebtn dsplhidden">S
                   <button class="blckbtn" id="btnRight" type="button" name="button"> > </button>
                   <button class="blckbtn" id="btnLeft" type="button" name="button"> < </button>
                 </div>
@@ -563,7 +563,7 @@
                   <button class="blckbtn" id="btnRight" type="button" name="button"> > </button>
                   <button class="blckbtn" id="btnLeft" type="button" name="button"> < </button>
                 </div>
-                <div class="iframe1">
+                <div class="iframe .active">
                   <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   <div class="blackbckgrnd shopText">
                     <h4 class="RR">STORKS</h4>
@@ -609,7 +609,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="iframe2">
+                <div class="iframe">
                   <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   <div class="blackbckgrnd shopText">
                     <h4 class="RR">Test</h4>
@@ -649,13 +649,13 @@
                           <h5 class="txtR RR">Price :</h5>
                         </div>
                         <div class="col-8">
-                          <span>15€</span>
+                          <span>10€</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="iframe3">
+                <div class="iframe">
                         <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         <div class="blackbckgrnd shopText">
                           <h4 class="RR">STORKS</h4>
@@ -695,12 +695,12 @@
                                 <h5 class="txtR RR">Price :</h5>
                               </div>
                               <div class="col-8">
-                                <span>15€</span>
+                                <span>8€</span>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div> -->
+                      </div>
               </div>
             </div>
           </div>
@@ -710,25 +710,25 @@
         <div class="titreFeature">
           <h1 class="feature contactus"> CONTACT US</h1>
           </div>
-        <form action="" method="get" role="form">
+        <form action="#" method="get" role="form">
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="FIRST NAME">
+              <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="LAST NAME">
+              <input type="text" class="form-control" id="lastname" placeholder="LAST NAME">
             </div>
           </div>
           <div class="row">
             <div class="col">
-            <input type="email" class="form-control" placeholder="EMAIL">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL">
             </div>
             <div class="col">
-            <input type="text" class="form-control" placeholder="SUBJECT">
+            <input type="text" class="form-control" id="subject" placeholder="SUBJECT">
             </div>
           </div>
-            <textarea class="form-control" rows="5" placeholder="YOUR MESSAGE"></textarea>
-          <button type="submit" id='btnform 'class="redBox">SEND MESSAGE</button>
+            <textarea class="form-control" rows="5" id="message" placeholder="YOUR MESSAGE"></textarea>
+          <button type="submit" id='btnform' class="redBox">SEND MESSAGE</button>
         </form>
       </div>
     </main>
@@ -738,7 +738,8 @@
             <label for="exampleFormControlInput1" class="Red">SUBSCRIBE TO US</label>
             <div class="forminline">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email...">
-              <button type="submit" class="redBox">SUBSCRIBE</button>
+               <button type="submit" class="redBox">SUBSCRIBE</button>
+              
             </div>
           </div>
         <div class="row">
@@ -882,6 +883,9 @@
     <script src="libraries/jquery.min.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/more-min.js"></script>
+    <script src="assets/js/next-before.js"></script>
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/form.js"></script>
     <!-- <script src="assets/js/main.js"></script> -->
   </body>
 </html>
