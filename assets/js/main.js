@@ -11,7 +11,7 @@ $(document).ready(function(){
 var nbre="";
 
 
-// récuperer le json
+// recuperer le json
 function ajax(){
   var json = $.getJSON( "./assets/js/movies.json", function(data) {
   for(i in data) {
@@ -65,7 +65,7 @@ $(document).on("click", ".clickImage", function (){
     );
 });
 
-//vérif de l'age
+//vï¿½rif de l'age
 function ageVerif() {
   let age = prompt("Please enter your age !");
   age = parseInt(age);
@@ -89,7 +89,13 @@ function btns(){
     $('.addImage3').toggle();
     $('.chooseMore').toggle();
   })
+
+  $('#moreSer').click(function(){
+    $('.hiddenSer').toggle();
+    $('.chooseMore').toggle();
+  })
 }
+
 
 // Hide cookies alert
 function cookies(){
@@ -159,11 +165,35 @@ function shopbtn2() {
       $('.iframe' + x).removeClass('hidden');
       // console.log('test-1');
     }else {
-      // console.log('raté');
+      // console.log('ratï¿½');
     }
 
   });
 }
+
+//tri par genre
+
+// $('#btnAventure').click(function(){
+//   $.getJSON( "./assets/js/movies.json", function(data) {
+//     for(i in data) {
+//       var name = data[i].name
+//       var trailer = data[i].trailer
+//       var synop = data[i].synop
+//       var Genre = data[i].Genre
+//       var year = data[i].year
+//       var real = data[i].real
+//       var actor = data[i].actor
+//       var price = data[i].price
+//       var image = data[i].image
+//       nbre = Number(data[i].nbr)
+//     }
+//       $.grep("./assets/js/movies.json", function(i){
+//         return i ='Adventure';
+//
+//       }, true);
+//     });
+// });
+
 
 //load des images dans featured movies
 
