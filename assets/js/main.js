@@ -108,13 +108,13 @@ $('#btnAcceptCookies').on('click', function() {
 
 function logIn(){
   $('#login').click(function(){
-    $('.login').removeClass('hidden');
+    $('.logIn').removeClass('hidden');
     $('body').css('oveflow', 'hidden');
     $('#cancel').click(function(){
       $('.login').addClass('hidden');
     });
     $('#createAcc').click(function(){
-        $('.login').addClass('hidden');
+        $('.logIn').addClass('hidden');
         $('.register').removeClass('hidden');
         $('#cancelReg').click(function(){
           $('.register').addClass('hidden');
