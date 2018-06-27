@@ -13,6 +13,7 @@ Le deuxième objectif est de créer une newsletter pour promouvoir le contenu du
 ## Les participants
 
   Adrien d'Oreye (github:Adridor)
+  
   Merieme Lamri (github:Lamri-Mery)
   
 ## Contexte
