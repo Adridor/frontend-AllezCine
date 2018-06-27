@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link Red-text  mr-2 greybox" href="#"><span class="Red" id="Home">Home</span> <span class="sr-only">(current)</span></a>
+              <a class="nav-link Red-text  mr-2 greybox" href="#"><span class="Red" id="Home">Home</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle White-text ml-3 mr-2 greybox" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,19 +38,20 @@
                 <a class="dropdown-item" href="#">Thriller</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle White-text ml-3  mr-5 greybox" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sections
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                <a class="dropdown-item" href="#TopSelection">Sélection du moment</a>
-                <a class="dropdown-item" href="#FeatMov">Featured Movies</a>
-                <a class="dropdown-item" href="#FeatSer">Featured Series</a>
-                <a class="dropdown-item" href="#Shop">Shop</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link White-text  mr-2 greybox" href="#TopSelection"><span class="White-text">Sélection</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link White-text greybox" href="#"><span class="White-text" id="Contact">Contact</span><span class="sr-only">(current)</span></a>
+              <a class="nav-link White-text  mr-2 greybox" href="#FeatMov"><span class="White-text">Movies</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link White-text  mr-2 greybox" href="#FeatSer"><span class="White-text">Series</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link White-text  mr-2 greybox" href="#Shop"><span class="White-text">Shop</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link White-text greybox" href="#"><span class="White-text" id="Contact">Contact</span></a>
             </li>
           </ul>
         </div>
@@ -171,14 +172,15 @@
           </div>
           <div class="ChangeChoice">
             <button id="btnAventure" type="button" name="button">Aventure</button>
-            <button id="btnDrame"type="button" name="button">Drame</button>
+            <button id="btnComedie"type="button" name="button">Comedie</button>
             <button id="btnSF"type="button" name="button">Science-fiction</button>
           </div>
-          <div class="row addImage1">
-          </div>
-          <div class="row addImage2"> </div>
+          <div class="triClass">
+          <div class="row addImage1"></div>
+          <div class="row addImage2"></div>
           <div class="row addImage3" style="display: none"></div>
-          <div  class="btnMore alignR">
+          </div>
+          <div class="btnMore alignR">
             <button id="moreMov" class="redBox"  type="button" name="button">
               <div class="chooseMore">PLUS DE FILMS</div>
               <div class="chooseMore" style="display: none">MOINS DE FILMS</div>
@@ -195,188 +197,17 @@
             <button type="button" name="button">Drame</button>
             <button type="button" name="button">Science-fiction</button>
           </div>
-          <div class="row">
-            <div class="col-2">
-              <a id="myModalTest" href="">
-                <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Intouchable</h3>
-                <p class="Finfo">2011<span class="textRight">Comedie</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Inception</h3>
-                <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/thefall-2006-dramatique.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">The Fall</h3>
-                <p class="Finfo">2006<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/shutterisland-2010-thriller.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Shutter Island</h3>
-                <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Le Seigneur des anneaux</h3>
-              <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Intouchable</h3>
-                <p class="Finfo">2011<span class="textRight">Comedie</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Inception</h3>
-                <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/thefall-2006-dramatique.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">The Fall</h3>
-                <p class="Finfo">2006<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#">
-                <img src="assets/img/shutterisland-2010-thriller.jpg" alt="Movie - Poster">
-                <h3 class="Finfo">Shutter Island</h3>
-                <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-              </a>
-            </div>
-          </div>
+          <div class="row addImage4"></div>
+          <div class="row addImage5"></div>
+
           <div class="hiddenSer" style="display: none">
-            <div class="row">
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                  <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Intouchable</h3>
-                  <p class="Finfo">2011<span class="textRight">Comedie</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Inception</h3>
-                  <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/thefall-2006-dramatique.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">The Fall</h3>
-                  <p class="Finfo">2006<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/shutterisland-2010-thriller.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Shutter Island</h3>
-                  <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/storks.jpeg" alt="Movie - Poster">
-                  <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/alien.jpeg" alt="Movie - Poster">
-                  <h3 class="Finfo">Le Seigneur des anneaux</h3>
-                  <p class="Finfo">2002<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/batmanmovie-2017-comedie.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Intouchable</h3>
-                  <p class="Finfo">2011<span class="textRight">Comedie</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Inception</h3>
-                  <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/thefall-2006-dramatique.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">The Fall</h3>
-                  <p class="Finfo">2006<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-              <div class="col-2">
-                <a href="#">
-                  <img src="assets/img/shutterisland-2010-thriller.jpg" alt="Movie - Poster">
-                  <h3 class="Finfo">Shutter Island</h3>
-                  <p class="Finfo">2010<span class="textRight">Adventure</span></p>
-                </a>
-              </div>
-            </div>
+            <div class="row addImage6"></div>
+            <div class="row addImage7"></div>
           </div>
           <div  id="moreSer" class="btnMore alignR">
             <button class="redBox"type="button" name="button">
-              <div class="chooseMore"> PLUS DE SERIES</div>
-              <div class="chooseMore" style="display: none">MOINS DE SERIES</div>
+              <div class="chooseMoreSer"> PLUS DE SERIES</div>
+              <div class="chooseMoreSer" style="display: none">MOINS DE SERIES</div>
             </button>
           </div>
 
@@ -922,7 +753,7 @@
         </div>
       </div>
     </footer>
-    <div class="totalScreen login hidden">
+    <div id="loginForm" class="totalScreen login hidden">
       <div class="login-form">
         <form action="" method="post">
             <h2 class="text-center">Log in</h2>
@@ -945,7 +776,7 @@
           <p id="createAcc" class="text-center"><a href="#">Create an Account</a></p>
       </div>
     </div>
-    <div class="totalScreen register hidden">
+    <div id="registerForm" class="totalScreen register hidden">
       <div class="login-form">
         <form action="" method="post">
             <h2 class="text-center">Register</h2>

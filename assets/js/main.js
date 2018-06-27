@@ -1,19 +1,11 @@
-$(document).ready(function(){
-  // ageVerif();
-  btns();
-  cookies();
-  logIn();
-  shopbtn();
-  shopbtn2();
-  ajax();
-});
-
 var nbre="";
+var x=1;
+var y=2;
 
 
-// recuperer le json
+// recuperer le json des films
 function ajax(){
-  var json = $.getJSON( "./assets/js/movies.json", function(data) {
+  $.getJSON( "./assets/js/movies.json", function(data) {
   for(i in data) {
     var name = data[i].name
     var trailer = data[i].trailer
@@ -25,14 +17,42 @@ function ajax(){
     var price = data[i].price
     var image = data[i].image
     nbre = Number(data[i].nbr)
-    var entry = '<div id="jsp' + nbre +'" class="col-2 clickImage"><a href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
+    var entry = '<div id="jsp' + nbre +'" class="col clickImage '+ Genre +'"><a href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
     var y = data.indexOf(data[i]);
     if ( y > 11) {
       $(entry).appendTo($('.addImage3'));
+
     }else if (y > 5) {
       $(entry).appendTo($('.addImage2'));
     }else {
       $(entry).appendTo($('.addImage1'));
+    }
+  }
+})
+}
+// recuperer le json des films
+function ajax2(){
+  $.getJSON( "./assets/js/series.json", function(data) {
+  for(i in data) {
+    var name = data[i].name
+    var trailer = data[i].trailer
+    var synop = data[i].synop
+    var Genre = data[i].Genre
+    var year = data[i].year
+    var real = data[i].real
+    var actor = data[i].actor
+    var price = data[i].price
+    var image = data[i].image
+    nbre = Number(data[i].nbr)
+    var entry = '<div id="jsp' + nbre +'" class="col clickImage a'+ Genre +'"><a href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
+    var y = data.indexOf(data[i]);
+    if ( y > 11) {
+      $(entry).appendTo($('.addImage6'));
+
+    }else if (y > 5) {
+      $(entry).appendTo($('.addImage5'));
+    }else {
+      $(entry).appendTo($('.addImage4'));
     }
   }
 })
@@ -65,7 +85,7 @@ $(document).on("click", ".clickImage", function (){
     );
 });
 
-//v�rif de l'age
+//verif de l'age
 function ageVerif() {
   let age = prompt("Please enter your age !");
   age = parseInt(age);
@@ -85,7 +105,7 @@ function ageVerif() {
   }
 }
 
-// boutons
+// boutons plus moins series
 function btns(){
   $('#moreMov').click(function(){
     $('.addImage3').toggle();
@@ -94,48 +114,43 @@ function btns(){
 
   $('#moreSer').click(function(){
     $('.hiddenSer').toggle();
-    $('.chooseMore').toggle();
+    $('.chooseMoreSer').toggle();
   })
 }
 
-
 // Hide cookies alert
 function cookies(){
-$('#btnAcceptCookies').on('click', function() {
+  $('#btnAcceptCookies').on('click', function() {
     $('#cookiesAlert').css('display', 'none');
-});
+  });
 }
+// Login et register
 
 function logIn(){
   $('#login').click(function(){
-    $('.logIn').removeClass('hidden');
-    $('body').css('oveflow', 'hidden');
+    $('#loginForm').removeClass('hidden');
     $('#cancel').click(function(){
-      $('.login').addClass('hidden');
+      $('.login').hide();
     });
     $('#createAcc').click(function(){
-        $('.logIn').addClass('hidden');
+        $('#loginForm').addClass('hidden');
         $('.register').removeClass('hidden');
         $('#cancelReg').click(function(){
           $('.register').addClass('hidden');
         });
     });
-    $('totalScreen').click(function(){
-      $('.login').addClass('hidden');
-    })
   })
   $('#register').click(function(){
-    $('.register').removeClass('hidden');
-    $('body').css('oveflow', 'hidden');
+    $('#registerForm').removeClass('hidden');
     $('#cancelReg').click(function(){
-      $('.register').addClass('hidden');
+      $('#loginForm').hide();
+      $('#registerForm').addClass('hidden');
     });
   })
 }
 
 // fonction pour les boutons du shop
-var x=1;
-var y=2;
+
 function shopbtn() {
   $('#btnRight').click(function(){
     if (x < 6) {
@@ -174,31 +189,33 @@ function shopbtn2() {
 }
 
 //tri par genre
+  //aventrue
+$('#FeatMov').on("click","#btnAventure", function(){
+  $('.Comedie').hide();
+  $('.Science-fiction').hide();
+  $('.Dramatique').hide();
+  $('.Thriller').hide();
+  $('.Horreur').hide();
+  $('.Dramatique').hide();
+  $('.Adventure').appendTo($('.addImage1'));
+  $('#moreMov').addClass('hidden');
+});
+  //comédie
+  $('#FeatMov').on("click","#btnComedie", function(){
+    $('.Adventure').hide();
+    $('.Science-fiction').hide();
+    $('.Dramatique').hide();
+    $('.Thriller').hide();
+    $('.Horreur').hide();
+    $('.Dramatique').hide();
+    $('.Comedie').appendTo($('.addImage1'));
+    $('#moreMov').addClass('hidden');
+  });
 
-// $('#btnAventure').click(function(){
-//   $.getJSON( "./assets/js/movies.json", function(data) {
-//     for(i in data) {
-//       var name = data[i].name
-//       var trailer = data[i].trailer
-//       var synop = data[i].synop
-//       var Genre = data[i].Genre
-//       var year = data[i].year
-//       var real = data[i].real
-//       var actor = data[i].actor
-//       var price = data[i].price
-//       var image = data[i].image
-//       nbre = Number(data[i].nbr)
-//     }
-//       $.grep("./assets/js/movies.json", function(i){
-//         return i ='Adventure';
-//
-//       }, true);
-//     });
-// });
-
-
-//load des images dans featured movies
-
-// function imagesLoad(){
-//   $('.addImage').
-// }
+$(document).ready(function(){
+  // ageVerif();
+  ajax();
+  ajax2();
+  btns();
+  logIn();
+});
