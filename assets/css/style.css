@@ -1,5 +1,12 @@
+/*Général*/
+h1{
+  font-size: 1.5em!important;
+}
+h2{
+  font-size: 1.4em!important;
+}
 /*Rubans*/
-.links{
+#links{
   position: fixed;
   top: 250px;
   margin-left: -95px;
@@ -17,14 +24,14 @@
 .Ruban > span > a{
   color: #ffffff;
 }
-.fab{
+#links .fab{
   cursor: pointer;
   background-color: #ffffff;
   border-radius: 50%;
   padding: 1vh;
   margin: 0px 0px 5px 10px;
 }
-.fa-facebook-f{
+#links .fa-facebook-f{
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
@@ -51,7 +58,7 @@
 }
 /*Ruban animation*/
 div#twitter:hover, div#codepen:hover, div#google:hover {
-    animation-duration: 1s;
+  animation-duration: 1s;
   animation-name: glissement;
   animation-iteration-count: infinite;
 }
@@ -65,7 +72,7 @@ div#twitter:hover, div#codepen:hover, div#google:hover {
   }
 }
 div#facebook:hover {
-    animation-duration: 1s;
+  animation-duration: 1s;
   animation-name: fb-glissement;
   animation-iteration-count: infinite;
 }
@@ -78,4 +85,77 @@ div#facebook:hover {
     margin-right: -120px;
   }
 }
+/*Formulaire*/
+h1.contactus {
+    margin-bottom: -130px;
+}
+form {
+  position: relative;
+  bottom: -120px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+textarea.form-control {
+    margin-bottom: 20px;
+}
+form input{
+  margin-bottom: 10px;
+}
 /*Footer*/
+footer {
+  background-color: #000000;
+  padding-top: 10%;
+}
+footer h2, footer p, footer li, footer i {
+  color: #ffffff;
+  background-color: #000000!important;
+}
+footer .container-fluid h2, footer .container-fluid #linksfooter {
+    margin: auto;
+}
+footer ol{
+  padding-left: 0;
+}
+footer hr{
+  background-color: #ced4da;
+}
+.sm-img{
+  margin-top: -8px;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.sm-img > img{
+  margin-top: -50%!important;
+}
+
+#smimgallezcine .col-4 {
+  padding: 0;
+}
+
+#smimgallezcine img {
+    margin: 0;
+    padding: 0;
+}
+
+footer .badge-secondary {
+  padding: 5px;
+  margin: 2px;
+}
+#linksfooter .fab {
+    margin: 4px;
+    border: 1px solid #ffffff;
+    padding: 6px;
+}
+#linksfooter .fa-facebook-f {
+    padding: 6px 10px;
+}
+footer .form-group {
+    text-align: center;
+}
+footer input {
+  width: 40%!important;
+  margin: 2px auto 12px;
+  display: inline-block!important;
+}

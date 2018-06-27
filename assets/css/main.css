@@ -1,6 +1,8 @@
+/*Général*/
 *{
 font-family: Helvetica Neue, helvetica, arial, sans-serif;
 }
+/*Général Texte Rouge*/
 .RR{
   color: #FB4446;
 }
@@ -65,7 +67,6 @@ h3{
   align-self: center;
   align-content: center;
   margin-top: 0.1em;
-  margin-left: 5.5em;
   background-color: white;
   height: auto;
 }
@@ -92,6 +93,7 @@ h3{
    margin-left: -2em;
 }
 
+
 /* alignement bouton */
 .alignR{
   margin-bottom: 1em;
@@ -107,9 +109,12 @@ h3{
 }
 
 .movShop{
-  background-color: black;
   padding: 0 !important;
   color: white;
+  height: 100%;
+}
+.blackbckgrnd{
+  background-color: black;
 }
 
 .txtR{
@@ -129,4 +134,71 @@ iframe{
   margin-bottom: 3px;
   border: none;
   margin-right: 4px;
+}
+
+.movieShop{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.hidden{
+  display: none;
+}
+
+.dsplhidden{
+  visibility: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.smovdspl img{
+  margin-top: 0 !important;
+}
+/* cookies */
+#cookiesAlert{
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+
+}
+
+/* login register */
+
+.totalScreen{
+  padding-top: 150px;
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(178, 173, 173, 0.90);
+  z-index: 999999999999999999999999999999;
+}
+
+.login-form {
+		width: 340px;
+    	margin: 50px auto;
+}
+.login-form form {
+  position: inherit !important;
+	margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+    padding: 30px;
+}
+.login-form h2 {
+      margin: 0 0 15px;
+}
+.form-control, .btn {
+      min-height: 38px;
+      border-radius: 2px;
+}
+.totalScreen .btn {
+      font-size: 15px;
+      font-weight: bold;
+}
+#registerbtn{
+  padding-left: 40%;
 }
