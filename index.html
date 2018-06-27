@@ -269,36 +269,36 @@
         <div class="titreFeature">
           <h1 class="feature contactus"> CONTACT US</h1>
           </div>
-        <form id="contactUS" action="" method="get" role="form">
+        <form onsubmit="return myclick()" method="get" role="form">
           <div class="row">
             <div class="col">
-              <input id="Fname" type="text" class="form-control" placeholder="FIRST NAME" label="First Name">
+              <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="LAST NAME"label="Last Name">
+              <input type="text" class="form-control" id="lastname" placeholder="LAST NAME">
             </div>
           </div>
           <div class="row">
             <div class="col">
-            <input type="email" class="form-control" placeholder="EMAIL"label="e-mail">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL"label="e-mail">
             </div>
             <div class="col">
-            <input type="text" class="form-control" placeholder="SUBJECT" label="subject">
+            <input type="text" class="form-control" id="subject" placeholder="SUBJECT"label="subject">
             </div>
           </div>
-            <textarea class="form-control" rows="5" placeholder="YOUR MESSAGE" label="your message"></textarea>
-          <button id="submitContact" class="btn btn-primary">Envoyer</button>
-
+            <textarea class="form-control" rows="5" id="message" placeholder="YOUR MESSAGE"label="your message"></textarea>
+          <button type="submit" id='btnform' class="redBox">SEND MESSAGE</button>
         </form>
       </div>
     </main>
-    <footer>
-      <div class="container-fluid contact">
+    <footer id="footer">
+      <div class="container-fluid">
         <div class="form-group">
             <label for="exampleFormControlInput1" class="Red">SUBSCRIBE TO US</label>
             <div class="forminline">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email...">
-              <button type="submit" class="redBox">SUBSCRIBE</button>
+               <button type="submit" class="redBox">SUBSCRIBE</button>
+              
             </div>
           </div>
         <div class="row">
@@ -528,6 +528,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/next-before.js"></script>
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/form.js"></script>
   </body>
 </html>

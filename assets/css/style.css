@@ -87,7 +87,7 @@ div#facebook:hover {
 }
 /*Formulaire*/
 h1.contactus {
-    margin-bottom: -130px;
+  margin-bottom: -130px;
 }
 form {
   position: relative;
@@ -158,4 +158,19 @@ footer input {
   width: 40%!important;
   margin: 2px auto 12px;
   display: inline-block!important;
+}
+#mybutton{
+  position: fixed;
+  z-index: 1;
+  bottom: 50px;
+  right: 10px;
+  border: none;
+  background: none;
+}
+#mybutton > i {
+border-radius: 50%;
+font-size: 3em;
+}
+button:focus{
+  outline: none!important;
 }
