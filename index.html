@@ -225,365 +225,51 @@
                   <button class="blckbtn" type="button" name="button"> > </button>
                   <button class="blckbtn"  type="button" name="button"> < </button>
                 </div>
-                <div class="row">
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                      <div class="grayB">
-                        <h3 class="Finfo">LOTR</h3>
-                        <p class="Finfo">2002<span class="textRight">15€</span></p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                        <div class="grayB">
-                          <h3 class="Finfo">LOTR</h3>
-                          <p class="Finfo">2002<span class="textRight">15€</span></p>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
-                        <div class="grayB">
-                          <h3 class="Finfo">Intouchable</h3>
-                          <p class="Finfo">2011<span class="textRight">15€</span></p>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <div class="grayB">
-                          <h3 class="Finfo">Inception</h3>
-                          <p class="Finfo">2010<span class="textRight">15€</span></p>
-                        </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                      <div class="grayB">
-                        <h3 class="Finfo">LOTR</h3>
-                        <p class="Finfo">2002<span class="textRight">15€</span></p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/lesdeuxtours-2002-aventure.jpg" alt="Movie - Poster">
-                      <div class="grayB">
-                        <h3 class="Finfo">LOTR</h3>
-                        <p class="Finfo">2002<span class="textRight">15€</span></p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/intouchables-2011-comedie.jpg" alt="Movie - Poster">
-                        <div class="grayB">
-                          <h3 class="Finfo">Intouchable</h3>
-                          <p class="Finfo">2011<span class="textRight">15€</span></p>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="#">
-                      <img src="assets/img/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <div class="grayB">
-                          <h3 class="Finfo">Inception</h3>
-                          <p class="Finfo">2010<span class="textRight">15€</span></p>
-                        </div>
-                    </a>
-                  </div>
-                </div>
+                <div class="row addImageToShop"></div>
+                <div class="row addImageToShop2"></div>
               </div>
               <div class="col-lg-5 col-sm-12 movShop">
                 <div class="Changebtn">
                   <button class="blckbtn" id="btnRight" type="button" name="button"> > </button>
                   <button class="blckbtn" id="btnLeft" type="button" name="button"> < </button>
                 </div>
-                <div class="iframe1">
-                  <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div id="iframeCadre" class="iframe1">
+                  <iframe id="iframeTrail" class="blackbckgrnd" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   <div class="blackbckgrnd shopText">
-                    <h4 class="RR">STORKS</h4>
+                    <h4 id="iframeTitre" class="RR"></h4>
                     <div class="storyLine">
                       <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">STORY LINE:</h5>
+                        <div class="col-3">
+                          <h5 class="txtR RR">SYNOPSIS:</h5>
                         </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al.</span>
-                        </div>
+                        <div id="iframeSynop" class="col-9"></div>
                       </div>
-                    </div>
                     <div class="Release">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-3">
                           <h5 class="txtR RR">Released on :</h5>
                         </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
+                        <div id="iframeYear" class="col-8"></div>
                       </div>
                     </div>
                     <div class="Genre">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-3">
                           <h5 class="txtR RR">Genre :</h5>
                         </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
+                        <div id="iframeGenre" class="col-9"></div>
                       </div>
                     </div>
                     <div class="Price">
                       <div class="row">
-                        <div class="col-4">
+                        <div class="col-3">
                           <h5 class="txtR RR">Price :</h5>
                         </div>
-                        <div class="col-8">
-                          <span>15€</span>
-                        </div>
+                        <div id="iframeprice" class="col-9"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="iframe2 hidden">
-                  <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <div class="blackbckgrnd shopText">
-                    <h4 class="RR">Test</h4>
-                    <div class="storyLine">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">STORY LINE:</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Release">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Released on :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Genre">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Genre :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Price">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Price :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>15€</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="iframe3 hidden">
-                  <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <div class="blackbckgrnd shopText">
-                    <h4 class="RR">JE SAIS PAS</h4>
-                    <div class="storyLine">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">STORY LINE:</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Release">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Released on :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Genre">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Genre :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Price">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Price :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>15€</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="iframe4 hidden">
-                  <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <div class="blackbckgrnd shopText">
-                    <h4 class="RR">CA MARCHE?</h4>
-                    <div class="storyLine">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">STORY LINE:</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Release">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Released on :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Genre">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Genre :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Price">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Price :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>15€</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="iframe5 hidden">
-                  <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <div class="blackbckgrnd shopText">
-                    <h4 class="RR">AIDEZ MOIIII</h4>
-                    <div class="storyLine">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">STORY LINE:</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Release">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Released on :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Genre">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Genre :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Price">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Price :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>15€</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="iframe6 hidden">
-                  <iframe class="blackbckgrnd" src="https://www.youtube.com/embed/ZVzL94jZNdU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <div class="blackbckgrnd shopText">
-                    <h4 class="RR">JPP</h4>
-                    <div class="storyLine">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">STORY LINE:</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Release">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Released on :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Genre">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Genre :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>Lorem ipsum dolor sit amet,</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Price">
-                      <div class="row">
-                        <div class="col-4">
-                          <h5 class="txtR RR">Price :</h5>
-                        </div>
-                        <div class="col-8">
-                          <span>15€</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
@@ -753,6 +439,7 @@
         </div>
       </div>
     </footer>
+    <!-- form pour login -->
     <div id="loginForm" class="totalScreen login hidden">
       <div class="login-form">
         <form action="" method="post">
@@ -776,6 +463,7 @@
           <p id="createAcc" class="text-center"><a href="#">Create an Account</a></p>
       </div>
     </div>
+    <!-- form pour register -->
     <div id="registerForm" class="totalScreen register hidden">
       <div class="login-form">
         <form action="" method="post">
@@ -806,8 +494,9 @@
         </form>
       </div>
     </div>
+    <!-- modal -->
     <div class="modal" id="myModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog" width="1000px" margin-left="auto">
           <div class="modal-content">
               <!-- Modal Header -->
             <div class="modal-header">
@@ -817,7 +506,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-              <iframe id="modFrame"width="350" height="200" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe id="modFrame"width="100%" height="400px" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <div>
                 <span id="modSynop"></span>
                 <span id="modReal"></span>

@@ -1,6 +1,7 @@
 var nbre="";
 var x=1;
 var y=2;
+var indexOfShop = 0;
 
 
 // recuperer le json des films
@@ -58,6 +59,31 @@ function ajax2(){
 })
 }
 
+//shop
+
+function ajaxShop(){
+  $.getJSON("./assets/js/series.json",function(data){
+    for(i in data) {
+      var name = data[i].name
+      var trailer = data[i].trailer
+      var synop = data[i].synop
+      var Genre = data[i].Genre
+      var year = data[i].year
+      var real = data[i].real
+      var actor = data[i].actor
+      var price = data[i].price
+      var image = data[i].image
+      nbre = Number(data[i].nbr)
+      var entry = '<div id="jsp' + nbre +'" class="col clickframeShop '+ Genre +'"><a href="#" "><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
+      var y = data.indexOf(data[i]);
+      if (y < 4) {
+        $(entry).appendTo($('.addImageToShop2'));
+      }else if (y < 8) {
+        $(entry).appendTo($('.addImageToShop'));
+      }
+    }
+  });
+}
 // completer le modal
 $(document).on("click", ".clickImage", function (){
   let source = $(this).attr('id');
@@ -84,7 +110,76 @@ $(document).on("click", ".clickImage", function (){
       }
     );
 });
+//mettre a jour le iframe du shop
+$(document).on("click",".clickframeShop", function(){
+  event.preventDefault();
+  let source = $(this).attr('id');
+  let index2 = (Number(source.slice(3))-1);
+  $.getJSON( "./assets/js/movies.json", function(data) {
+    var name = data[index2].name
+    var trailer = data[index2].trailer
+    var synop = data[index2].synop
+    var Genre = data[index2].Genre
+    var year = data[index2].year
+    var real = data[index2].real
+    var actor = data[index2].actor
+    var price = data[index2].price
+    var image = data[index2].image
+    nbre = Number(data[index2].nbr)
+    $('#iframeTitre').html(name);
+    $('#iframeTrail').prop('src', trailer)
+    $('#iframeSynop').html('<span> '+ synop +'</span>');
+    $('#iframeYear').html('<span>'+year+'</span>');
+    $('#iframeGenre').html('<span>'+ Genre +'</span>');
+    $('#iframeprice').html('<span>'+ price+'</span>');
+  });
+})
+// fonction pour les boutons du shop
+$(document).on("click","#btnRight", function(){
+  event.preventDefault();
+  indexOfShop ++;
+  $.getJSON( "./assets/js/movies.json", function(data) {
+    var name = data[indexOfShop].name
+    var trailer = data[indexOfShop].trailer
+    var synop = data[indexOfShop].synop
+    var Genre = data[indexOfShop].Genre
+    var year = data[indexOfShop].year
+    var real = data[indexOfShop].real
+    var actor = data[indexOfShop].actor
+    var price = data[indexOfShop].price
+    var image = data[indexOfShop].image
+    nbre = Number(data[indexOfShop].nbr)
+    $('#iframeTitre').html(name);
+    $('#iframeTrail').prop('src', trailer)
+    $('#iframeSynop').html('<span> '+ synop +'</span>');
+    $('#iframeYear').html('<span>'+year+'</span>');
+    $('#iframeGenre').html('<span>'+ Genre +'</span>');
+    $('#iframeprice').html('<span>'+ price+'</span>');
+  });
 
+})
+$(document).on("click","#btnLeft", function(){
+    event.preventDefault();
+    indexOfShop --;
+    $.getJSON( "./assets/js/movies.json", function(data) {
+      var name = data[indexOfShop].name
+      var trailer = data[indexOfShop].trailer
+      var synop = data[indexOfShop].synop
+      var Genre = data[indexOfShop].Genre
+      var year = data[indexOfShop].year
+      var real = data[indexOfShop].real
+      var actor = data[indexOfShop].actor
+      var price = data[indexOfShop].price
+      var image = data[indexOfShop].image
+      nbre = Number(data[indexOfShop].nbr)
+      $('#iframeTitre').html(name);
+      $('#iframeTrail').prop('src', trailer)
+      $('#iframeSynop').html('<span> '+ synop +'</span>');
+      $('#iframeYear').html('<span>'+year+'</span>');
+      $('#iframeGenre').html('<span>'+ Genre +'</span>');
+      $('#iframeprice').html('<span>'+ price+'</span>');
+    });
+  });
 //verif de l'age
 function ageVerif() {
   let age = prompt("Please enter your age !");
@@ -110,19 +205,15 @@ function ageVerif() {
     $('.addImage3').toggle();
     $('.chooseMore').toggle();
   })
-
   $('#moreSer').click(function(){
     $('.hiddenSer').toggle();
     $('.chooseMoreSer').toggle();
   })
-
 // Hide cookies alert
   $('#btnAcceptCookies').on('click', function() {
     $('#cookiesAlert').css('display', 'none');
   });
 // Login et register
-
-
   $('#login').click(function(){
     $('#loginForm').removeClass('hidden');
     $('#cancel').click(function(){
@@ -143,41 +234,6 @@ function ageVerif() {
       $('#registerForm').addClass('hidden');
     });
   })
-
-// fonction pour les boutons du shop
-
-  $('#btnRight').click(function(){
-    if (x < 6) {
-      $('.iframe'+ x).addClass('hidden');
-      // console.log(x);
-      // console.log(y);
-      $('.iframe'+ y).removeClass('hidden');
-      // console.log('test');
-      x++;
-      y++;
-    }else if (x >6) {
-      $('.iframe6').addClass('hidden');
-      $('.iframe1').remmoveClass('hidden');
-      x=1;
-      y=2;
-      // console.log('maybe');
-    }
-
-  });
-  $('#btnLeft').click(function(){
-    if (x > 0) {
-      x--;
-      y--;
-      // console.log(x);
-      // console.log(y);
-      $('.iframe' + y).addClass('hidden');
-      $('.iframe' + x).removeClass('hidden');
-      // console.log('test-1');
-    }else {
-      // console.log('rat�');
-    }
-
-  });
 
 //tri par genre
   //aventrue
@@ -218,4 +274,5 @@ $(document).ready(function(){
   // ageVerif();
   ajax();
   ajax2();
+  ajaxShop();
 });
