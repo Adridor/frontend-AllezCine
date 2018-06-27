@@ -14,7 +14,7 @@ Le deuxième objectif est de créer une newsletter pour promouvoir le contenu du
 
   Adrien d'Oreye (github:Adridor)
   
-  Merieme Lamri (github:Lamri-Mery)(contribution minime)
+  Merieme Lamri (github:Lamri-Mery)
   
 ## Contexte
   Ce projet nous a été donné lors de notre deuxième mois de formation en tant que web dev chez BeCode.
