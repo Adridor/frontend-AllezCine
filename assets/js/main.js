@@ -93,7 +93,7 @@ function ageVerif() {
   while(isNaN(age) || age < 18) {
 
       if(isNaN(age)){
-        console.log('bit');
+        console.log('pas de nombre');
           age = prompt("Please enter your age !");
       }
 
@@ -106,7 +106,6 @@ function ageVerif() {
 }
 
 // boutons plus moins series
-function btns(){
   $('#moreMov').click(function(){
     $('.addImage3').toggle();
     $('.chooseMore').toggle();
@@ -116,17 +115,14 @@ function btns(){
     $('.hiddenSer').toggle();
     $('.chooseMoreSer').toggle();
   })
-}
 
 // Hide cookies alert
-function cookies(){
   $('#btnAcceptCookies').on('click', function() {
     $('#cookiesAlert').css('display', 'none');
   });
-}
 // Login et register
 
-function logIn(){
+
   $('#login').click(function(){
     $('#loginForm').removeClass('hidden');
     $('#cancel').click(function(){
@@ -147,11 +143,9 @@ function logIn(){
       $('#registerForm').addClass('hidden');
     });
   })
-}
 
 // fonction pour les boutons du shop
 
-function shopbtn() {
   $('#btnRight').click(function(){
     if (x < 6) {
       $('.iframe'+ x).addClass('hidden');
@@ -170,8 +164,6 @@ function shopbtn() {
     }
 
   });
-}
-function shopbtn2() {
   $('#btnLeft').click(function(){
     if (x > 0) {
       x--;
@@ -186,20 +178,19 @@ function shopbtn2() {
     }
 
   });
-}
 
 //tri par genre
   //aventrue
-$('#FeatMov').on("click","#btnAventure", function(){
-  $('.Comedie').hide();
-  $('.Science-fiction').hide();
-  $('.Dramatique').hide();
-  $('.Thriller').hide();
-  $('.Horreur').hide();
-  $('.Dramatique').hide();
-  $('.Adventure').appendTo($('.addImage1'));
-  $('#moreMov').addClass('hidden');
-});
+  $('#FeatMov').on("click","#btnAventure", function(){
+    $('.Comedie').hide();
+    $('.Science-fiction').hide();
+    $('.Dramatique').hide();
+    $('.Thriller').hide();
+    $('.Horreur').hide();
+    $('.Dramatique').hide();
+    $('.Adventure').appendTo($('.addImage1'));
+    $('#moreMov').addClass('hidden');
+  });
   //comédie
   $('#FeatMov').on("click","#btnComedie", function(){
     $('.Adventure').hide();
@@ -211,11 +202,20 @@ $('#FeatMov').on("click","#btnAventure", function(){
     $('.Comedie').appendTo($('.addImage1'));
     $('#moreMov').addClass('hidden');
   });
+  //SF
+  $('#FeatMov').on("click","#btnSF", function(){
+    $('.Comedie').hide();
+    $('.Adventure').hide();
+    $('.Dramatique').hide();
+    $('.Thriller').hide();
+    $('.Horreur').hide();
+    $('.Dramatique').hide();
+    $('.Science-fiction').appendTo($('.addImage1'));
+    $('#moreMov').addClass('hidden');
+  });
 
 $(document).ready(function(){
   // ageVerif();
   ajax();
   ajax2();
-  btns();
-  logIn();
 });
