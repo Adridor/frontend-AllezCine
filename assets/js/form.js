@@ -7,3 +7,4 @@ function myclick(){
     alert(firstname + ' ' + lastname + '\n' + email + '\n' + subject + '\n' + message);
     return false; //do not submit the form
 }
+
