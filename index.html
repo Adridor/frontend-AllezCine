@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="theme-color" content="#FB4446">
     <meta charset="utf-8">
     <title>Allez-ciné</title>
   </head>
@@ -531,5 +532,19 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/button.js"></script>
     <script src="assets/js/form.js"></script>
+    <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('assets/js/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+
+    </script>
   </body>
 </html>
