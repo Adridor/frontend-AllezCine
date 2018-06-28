@@ -168,8 +168,8 @@
           </div>
           <div class="ChangeChoice">
             <button id="btnAventure" type="button" name="button">Aventure</button>
-            <button id="btnComedie"type="button" name="button">Comedie</button>
-            <button id="btnSF"type="button" name="button">Science-fiction</button>
+            <button id="btnComedie" type="button" name="button">Comedie</button>
+            <button id="btnSF" type="button" name="button">Science-fiction</button>
           </div>
           <div class="triClass">
           <div class="row addImage1"></div>
@@ -178,8 +178,8 @@
           </div>
           <div class="btnMore alignR">
             <button id="moreMov" class="redBox"  type="button" name="plus de films">
-              <div class="chooseMore">PLUS DE FILMS</div>
-              <div class="chooseMore" style="display: none">MOINS DE FILMS</div>
+              <span class="chooseMore">PLUS DE FILMS</span>
+              <span class="chooseMore" style="display: none">MOINS DE FILMS</span>
             </button>
           </div>
       </div>
@@ -201,12 +201,11 @@
             <div class="row addImage7"></div>
           </div>
           <div  id="moreSer" class="btnMore alignR">
-            <button class="redBox"type="button" name="Plus de series">
-              <div class="chooseMoreSer"> PLUS DE SERIES</div>
-              <div class="chooseMoreSer" style="display: none">MOINS DE SERIES</div>
+            <button class="redBox" type="button" name="Plus de series">
+              <span class="chooseMoreSer"> PLUS DE SERIES</span>
+              <span class="chooseMoreSer" style="display: none">MOINS DE SERIES</span>
             </button>
           </div>
-
         </div>
       </div>
       <div id="Shop" class="MovieShop">
@@ -219,7 +218,7 @@
               <div id="imgWidthTest" class="col-lg-7 col-sm-12">
                 <div class="Changebtn dsplhidden">
                   <button class="blckbtn" type="button" name=" "> > </button>
-                  <button class="blckbtn"  type="button" name=" "> < </button>
+                  <button class="blckbtn"  type="button" name=" "> &lt; </button>
                 </div>
                 <div class="row addImageToShop"></div>
                 <div class="row addImageToShop2"></div>
@@ -227,10 +226,10 @@
               <div class="col-lg-5 col-sm-12 movShop">
                 <div class="Changebtn">
                   <button class="blckbtn" id="btnRight" type="button" name="droite"> > </button>
-                  <button class="blckbtn" id="btnLeft" type="button" name="gauche"> < </button>
+                  <button class="blckbtn" id="btnLeft" type="button" name="gauche"> &lt; </button>
                 </div>
                 <div id="iframeCadre" class="iframe1">
-                  <iframe id="iframeTrail" class="blackbckgrnd" title="youtubetrailer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <iframe id="iframeTrail" class="blackbckgrnd" title="youtubetrailer" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   <div class="blackbckgrnd shopText">
                     <h4 id="iframeTitre" class="RR"></h4>
                     <div class="storyLine">
@@ -240,6 +239,7 @@
                         </div>
                         <div id="iframeSynop" class="col-9"></div>
                       </div>
+                    </div>
                     <div class="Release">
                       <div class="row">
                         <div class="col-3">
@@ -274,25 +274,25 @@
       <div class="container">
         <div class="titreFeature">
           <h1 class="feature contactus"> CONTACT US</h1>
-          </div>
-        <form onsubmit="return myclick()" method="get" role="form">
+        </div>
+        <form onsubmit="return myclick()" method="get">
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME">
+              <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME"></input>
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="lastname" placeholder="LAST NAME">
+              <input type="text" class="form-control" id="lastname" placeholder="LAST NAME"></input>
             </div>
           </div>
           <div class="row">
             <div class="col">
-            <input type="email" class="form-control" id="email" placeholder="EMAIL"label="e-mail">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" alt="e-mail"></input>
             </div>
             <div class="col">
-            <input type="text" class="form-control" id="subject" placeholder="SUBJECT"label="subject">
+              <input type="text" class="form-control" id="subject" placeholder="SUBJECT" alt="subject"></input>
             </div>
           </div>
-            <textarea class="form-control" rows="5" id="message" placeholder="YOUR MESSAGE"label="your message"></textarea>
+          <textarea class="form-control" rows="5" id="message" placeholder="YOUR MESSAGE" name="your message"></textarea>
           <button type="submit" id='btnform' class="redBox">SEND MESSAGE</button>
         </form>
       </div>
@@ -427,10 +427,10 @@
         <div class="row">
           <div id="linksfooter">
           <span><a href="#https://facebook.com/" title="Facebook"><i class="fab fa-facebook-f"></i></a></span>
-          <span><a href="#https://twitter.com/"title="Twitter"><i class="fab fa-twitter"></i></a></span>
-          <span><a href="#https://linkedin.com/"title="Linkedin"><i class="fab fa-linkedin-in"></i></a></span>
-          <span><a href="#https://youtube.com/"title="youtube"><i class="fab fa-youtube"></i></a></span>
-          <span><a href="#https://google.com/"title="google +"><i class="fab fa-google-plus-g"></i></a></span>
+          <span><a href="#https://twitter.com/" title="Twitter"><i class="fab fa-twitter"></i></a></span>
+          <span><a href="#https://linkedin.com/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></span>
+          <span><a href="#https://youtube.com/" title="youtube"><i class="fab fa-youtube"></i></a></span>
+          <span><a href="#https://google.com/" title="google +"><i class="fab fa-google-plus-g"></i></a></span>
         </div>
         </div>
       </div>
@@ -438,7 +438,7 @@
     <!-- form pour login -->
     <div id="loginForm" class="totalScreen login hidden">
       <div class="login-form">
-        <form action="" method="post">
+        <form method="post">
             <h2 class="text-center">Log in</h2>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Username" required="required">
@@ -462,7 +462,7 @@
     <!-- form pour register -->
     <div id="registerForm" class="totalScreen register hidden">
       <div class="login-form">
-        <form action="" method="post">
+        <form method="post">
             <h2 class="text-center">Register</h2>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Nom" required="required">
@@ -485,14 +485,14 @@
                 <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
                 <a href="#" class="pull-right">Forgot Password?</a>
                 <a href="#" id="cancelReg" class="pull-left">Cancel</a>
-                <a href="#" id="registerbtn" class="pull-right">Register</a>
+                <a href="#" id="registerBtn" class="pull-right">Register</a>
             </div>
         </form>
       </div>
     </div>
     <!-- modal -->
     <div class="modal" id="myModal">
-        <div class="modal-dialog" width="1000px" margin-left="auto">
+        <div class="modal-dialog">
           <div class="modal-content">
               <!-- Modal Header -->
             <div class="modal-header">
