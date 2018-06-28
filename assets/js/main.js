@@ -259,7 +259,7 @@ function ageVerif() {
   });
 
 $(document).ready(function(){
-  // ageVerif();
+  ageVerif();
   ajax();
   ajax2();
   ajaxShop();
