@@ -4,7 +4,7 @@ function nvxButton (){
 	// crée un nouvel élément button
 	var button = document.createElement('button');
 	// ajoute une classe à l'attribut
-	button.setAttribute('id', 'btnUp');
+	button.setAttribute('id', 'mybutton');
 	button.setAttribute('name', 'remonter');
 	// crée un nouvel élément i
     var icon = document.createElement('i');
@@ -15,7 +15,7 @@ function nvxButton (){
 	// crée un noeud à la fin de la liste des enfants d'un noeud parent spécifié (à l'élément id footer)
 	myfooter.appendChild(button);
 	};
-$(document).on('click','#btnUp', function(){
+$(document).on('click','#mybutton', function(){
 	$('html, body').animate({scrollTop:0}, 500);
 });
 $(window).scroll(function() {
