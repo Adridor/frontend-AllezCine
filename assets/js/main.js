@@ -176,13 +176,11 @@ function ageVerif() {
   while(isNaN(age) || age < 18) {
 
       if(isNaN(age)){
-        console.log('pas de nombre');
           age = prompt("Please enter your age !");
       }
 
       else if(age < 18){
-          // window.location.href = "https://www.imdb.com";
-          console.log('moins de 18');
+          window.location.href = "https://www.imdb.com";
           break;
       }
   }
