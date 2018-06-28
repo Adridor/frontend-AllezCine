@@ -5,6 +5,7 @@ function nvxButton (){
 	var button = document.createElement('button');
 	// ajoute une classe à l'attribut
 	button.setAttribute('id', 'btnUp');
+	button.setAttribute('name', 'remonter');
 	// crée un nouvel élément i
     var icon = document.createElement('i');
     // ajoute l'attribut de la classe de fontawesome
