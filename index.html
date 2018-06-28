@@ -182,6 +182,7 @@
               <span class="chooseMore" style="display: none">MOINS DE FILMS</span>
             </button>
           </div>
+        </div>
       </div>
       <div id="FeatSer" class="FeaturedSeries">
         <div class="container Seriediplay">
@@ -278,18 +279,18 @@
         <form onsubmit="return myclick()" method="get">
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME"></input>
+              <input type="text" class="form-control" id="firstname" placeholder="FIRST NAME">
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="lastname" placeholder="LAST NAME"></input>
+              <input type="text" class="form-control" id="lastname" placeholder="LAST NAME">
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <input type="email" class="form-control" id="email" placeholder="EMAIL" alt="e-mail"></input>
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="e-mail">
             </div>
             <div class="col">
-              <input type="text" class="form-control" id="subject" placeholder="SUBJECT" alt="subject"></input>
+              <input type="text" class="form-control" id="subject" placeholder="SUBJECT" name="subject">
             </div>
           </div>
           <textarea class="form-control" rows="5" id="message" placeholder="YOUR MESSAGE" name="your message"></textarea>
@@ -502,7 +503,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-              <iframe id="modFrame"width="100%" height="400px" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe id="modFrame" width="100%" height="400px" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <div>
                 <span id="modSynop"></span>
                 <span id="modReal"></span>
