@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#FB4446">
     <meta charset="utf-8">
     <title>Allez-ciné</title>
   </head>
@@ -65,7 +68,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner" role="Presentation">
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block img-fluid" src="assets/img/alien-banner.jpg" alt="First slide">
               <div class="carousel-caption d-none d-md-block">
@@ -172,7 +175,7 @@
           <div class="row addImage3" style="display: none"></div>
           </div>
           <div class="btnMore alignR">
-            <button id="moreMov" class="redBox"  type="button" name="button">
+            <button id="moreMov" class="redBox"  type="button" name="plus de films">
               <div class="chooseMore">PLUS DE FILMS</div>
               <div class="chooseMore" style="display: none">MOINS DE FILMS</div>
             </button>
@@ -184,9 +187,9 @@
           <h1 class="feature"> FEATURED SERIES</h1>
           </div>
           <div class="ChangeChoice">
-            <button type="button" name="button">Aventure</button>
-            <button type="button" name="button">Drame</button>
-            <button type="button" name="button">Science-fiction</button>
+            <button type="button" name="Aventure">Aventure</button>
+            <button type="button" name="Drame">Drame</button>
+            <button type="button" name="SF">Science-fiction</button>
           </div>
           <div class="row addImage4"></div>
           <div class="row addImage5"></div>
@@ -196,7 +199,7 @@
             <div class="row addImage7"></div>
           </div>
           <div  id="moreSer" class="btnMore alignR">
-            <button class="redBox"type="button" name="button">
+            <button class="redBox"type="button" name="Plus de series">
               <div class="chooseMoreSer"> PLUS DE SERIES</div>
               <div class="chooseMoreSer" style="display: none">MOINS DE SERIES</div>
             </button>
@@ -213,16 +216,16 @@
             <div class="row smovdspl">
               <div id="imgWidthTest" class="col-lg-7 col-sm-12">
                 <div class="Changebtn dsplhidden">
-                  <button class="blckbtn" type="button" name="button"> > </button>
-                  <button class="blckbtn"  type="button" name="button"> < </button>
+                  <button class="blckbtn" type="button" name=" "> > </button>
+                  <button class="blckbtn"  type="button" name=" "> < </button>
                 </div>
                 <div class="row addImageToShop"></div>
                 <div class="row addImageToShop2"></div>
               </div>
               <div class="col-lg-5 col-sm-12 movShop">
                 <div class="Changebtn">
-                  <button class="blckbtn" id="btnRight" type="button" name="button"> > </button>
-                  <button class="blckbtn" id="btnLeft" type="button" name="button"> < </button>
+                  <button class="blckbtn" id="btnRight" type="button" name="droite"> > </button>
+                  <button class="blckbtn" id="btnLeft" type="button" name="gauche"> < </button>
                 </div>
                 <div id="iframeCadre" class="iframe1">
                   <iframe id="iframeTrail" class="blackbckgrnd" title="youtubetrailer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -525,11 +528,24 @@
         <p>We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies on our website. However, if you would like to, you can change your cookie settings at any time.</p>
         <a id="btnAcceptCookies" class="btn btn-primary">Got it !</a>
       </div> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="libraries/jquery.min.js"></script>
+    <script src="libraries/popper.min.js"></script>
+    <script src="libraries/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/button.js"></script>
     <script src="assets/js/form.js"></script>
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
   </body>
 </html>

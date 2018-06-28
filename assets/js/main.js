@@ -60,7 +60,6 @@ function ajax2(){
 }
 
 //shop
-
 function ajaxShop(){
   $.getJSON("./assets/js/series.json",function(data){
     for(i in data) {
@@ -74,7 +73,7 @@ function ajaxShop(){
       var price = data[i].price
       var image = data[i].image
       nbre = Number(data[i].nbr)
-      var entry = '<div id="jsp' + nbre +'" class="col clickframeShop '+ Genre +'"><a href="#" "><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
+      var entry = '<div id="jsp' + nbre +'" class="col clickframeShop b'+ Genre +'"><a href="#" "><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
       var y = data.indexOf(data[i]);
       if (y < 4) {
         $(entry).appendTo($('.addImageToShop2'));
@@ -169,26 +168,23 @@ function shopDefil() {
       });
     });
 }
-
 //verif de l'age
-function ageVerif() {
-  let age = prompt("Please enter your age !");
-  age = parseInt(age);
-
-  while(isNaN(age) || age < 18) {
-
-      if(isNaN(age)){
-        console.log('pas de nombre');
-          age = prompt("Please enter your age !");
-      }
-
-      else if(age < 18){
-          // window.location.href = "https://www.imdb.com";
-          console.log('moins de 18');
-          break;
-      }
-  }
-}
+// function ageVerif() {
+//   let age = prompt("Please enter your age !");
+//   age = parseInt(age);
+//
+//   while(isNaN(age) || age < 18) {
+//
+//       if(isNaN(age)){
+//           age = prompt("Please enter your age !");
+//       }
+//
+//       else if(age < 18){
+//           window.location.href = "https://www.imdb.com";
+//           break;
+//       }
+//   }
+// }
 
 // boutons plus moins series
   $('#moreMov').click(function(){
