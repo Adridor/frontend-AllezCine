@@ -168,23 +168,23 @@ function shopDefil() {
       });
     });
 }
-//verif de l'age
-// function ageVerif() {
-//   let age = prompt("Please enter your age !");
-//   age = parseInt(age);
-//
-//   while(isNaN(age) || age < 18) {
-//
-//       if(isNaN(age)){
-//           age = prompt("Please enter your age !");
-//       }
-//
-//       else if(age < 18){
-//           window.location.href = "https://www.imdb.com";
-//           break;
-//       }
-//   }
-// }
+// verif de l'age
+function ageVerif() {
+  let age = prompt("Please enter your age !");
+  age = parseInt(age);
+
+  while(isNaN(age) || age < 18) {
+
+      if(isNaN(age)){
+          age = prompt("Please enter your age !");
+      }
+
+      else if(age < 18){
+          window.location.href = "https://www.imdb.com";
+          break;
+      }
+  }
+}
 
 // boutons plus moins series
   $('#moreMov').click(function(){
