@@ -257,7 +257,7 @@ function shopDefil() {
   });
 
 $(document).ready(function(){
-  // ageVerif();
+  ageVerif();
   ajax();
   ajax2();
   ajaxShop();
