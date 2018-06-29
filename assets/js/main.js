@@ -3,7 +3,6 @@ var x=1;
 var y=2;
 var indexOfShop = 1;
 
-
 // recuperer le json des films
 function ajax(){
   $.getJSON( "./assets/js/movies.json", function(data) {
@@ -18,7 +17,7 @@ function ajax(){
     var price = data[i].price
     var image = data[i].image
     nbre = Number(data[i].nbr)
-    var entry = '<div id="jsp' + nbre +'" class="col clickImage '+ Genre +'"><a href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
+    var entry = '<div id="jsp' + nbre +'" class="col  annulAff clickImage '+ Genre +'"><a href="#" data-toggle="modal" data-target="#myModal"><img src="assets/img/' + image + '" alt="Movie - Poster"><h3 class="Finfo">'+ name +'</h3><p class="Finfo">'+ year +'<span class="textRight"> '+ Genre + '</span></p></a></div>'
     var y = data.indexOf(data[i]);
     if ( y > 11) {
       $(entry).appendTo($('.addImage3'));
@@ -224,37 +223,37 @@ function ageVerif() {
 //tri par genre
   //aventrue
   $('#FeatMov').on("click","#btnAventure", function(){
-    $('.Comedie').hide();
-    $('.Science-fiction').hide();
-    $('.Dramatique').hide();
-    $('.Thriller').hide();
-    $('.Horreur').hide();
-    $('.Dramatique').hide();
+    $('.Adventure').addClass('remTest');
     $('.Adventure').appendTo($('.addImage1'));
     $('#moreMov').addClass('hidden');
+    $('#annulerTri').removeClass('hidden');
+    $('.annulAff').not('.Adventure').hide();
   });
   //comédie
   $('#FeatMov').on("click","#btnComedie", function(){
-    $('.Adventure').hide();
-    $('.Science-fiction').hide();
-    $('.Dramatique').hide();
-    $('.Thriller').hide();
-    $('.Horreur').hide();
-    $('.Dramatique').hide();
+    $('.Comedie').addClass('remTest');
     $('.Comedie').appendTo($('.addImage1'));
     $('#moreMov').addClass('hidden');
+    $('#annulerTri').removeClass('hidden');
+    $('.annulAff').not('.Comedie').hide();
   });
   //SF
   $('#FeatMov').on("click","#btnSF", function(){
-    $('.Comedie').hide();
-    $('.Adventure').hide();
-    $('.Dramatique').hide();
-    $('.Thriller').hide();
-    $('.Horreur').hide();
-    $('.Dramatique').hide();
+    $('.Science-fiction').addClass('remTest');
+    $('.annulAff').not('.Science-fiction').hide();
     $('.Science-fiction').appendTo($('.addImage1'));
     $('#moreMov').addClass('hidden');
+    $('#annulerTri').removeClass('hidden');
   });
+
+  //boutton annuler
+$('#annulerTri').click(function() {
+    ajax();
+    $('.remTest').remove();
+    $('#moreMov').removeClass('hidden');
+    $('#annulerTri').addClass('hidden');
+  })
+
 
 $(document).ready(function(){
   ageVerif();
