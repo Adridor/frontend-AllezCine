@@ -228,6 +228,7 @@ function ageVerif() {
     $('#moreMov').addClass('hidden');
     $('#annulerTri').removeClass('hidden');
     $('.annulAff').not('.Adventure').hide();
+    $('.sorter').hide();
   });
   //comédie
   $('#FeatMov').on("click","#btnComedie", function(){
@@ -236,6 +237,7 @@ function ageVerif() {
     $('#moreMov').addClass('hidden');
     $('#annulerTri').removeClass('hidden');
     $('.annulAff').not('.Comedie').hide();
+    $('.sorter').hide();
   });
   //SF
   $('#FeatMov').on("click","#btnSF", function(){
@@ -244,6 +246,7 @@ function ageVerif() {
     $('.Science-fiction').appendTo($('.addImage1'));
     $('#moreMov').addClass('hidden');
     $('#annulerTri').removeClass('hidden');
+    $('.sorter').hide();
   });
 
   //boutton annuler
@@ -252,6 +255,7 @@ $('#annulerTri').click(function() {
     $('.remTest').remove();
     $('#moreMov').removeClass('hidden');
     $('#annulerTri').addClass('hidden');
+    $('.sorter').show();
   })
 
 
