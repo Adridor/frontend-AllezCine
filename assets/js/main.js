@@ -260,7 +260,7 @@ $('#annulerTri').click(function() {
 
 
 $(document).ready(function(){
-  // ageVerif();
+  ageVerif();
   ajax();
   ajax2();
   ajaxShop();
