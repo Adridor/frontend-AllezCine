@@ -2,13 +2,16 @@
 
 ## Le projet
 
-Le projet Allez-Ciné est de créer en 2 semaines un site front-end responsif au design donné en utilisant les technologies apprises au cours de notre premier mois chez BeCoda à savoir: HTML, CSS, JavaScript, Jquery, Bootstrap.
+Le projet Allez-Ciné est de créer en 2 semaines un site front-end responsif au design donné en utilisant les technologies apprises au cours de notre premier mois chez BeCoda à savoir : HTML, CSS, JavaScript, Jquery, Bootstrap.
 
 Le deuxième objectif est de créer une newsletter pour promouvoir le contenu du site.
 
 [Les Consignes](https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine)
-[Le site fini]en cours
+
+[Le site fini](https://adridor.github.io/frontend-AllezCine/)
+
 [Le Layout](https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg)
+
 
 ## Les participants
 
